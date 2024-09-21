@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate percentage</title>
+    <style>
+        body{
+            background-color:white;
+        }
+        h1{
+            color: Green;
+        }
+        .layout{
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px solid green;
+            box-shadow: 5px 5px 5px gray;
+            padding: 1rem 1rem;
+        }
+        .btn{
+            cursor: pointer;
+            padding: 1rem 1rem;
+            font-weight: 700;
+            background-color: green;
+            color: white;
+            outline: none;
+            border: none;
+        }
+        .Percentage{
+            color: green;
+            font-size: 20px;
+        }
+        input[type="text"] {
+            padding: .3rem ;
+        }
+        @media (max-width:1024px){
+            input[type="text"] {
+            margin-top: 10px;
+        }
+        }
+        @media (max-width:425px){
+          .layout{
+            width: 80%;
+          }
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+<h1>Calculate Result</h1>
+<form action="#">
+<label for="input"><b>Obtained Marks:</b></label>
+<input type="text" id="input" placeholder="Enter your marks out of 850" required>
+<!-- <p class="invalid"></p> -->
+<br>
+<br>
+<button onclick="call()" class="btn">Calculate  Percentage</button>
+<p id="Percentage" class="Percentage"></p>
+<button onclick="grade()" class="btn">Your Grade</button>
+</form>
+<h1 id="grade" class="grade"></h1>
+</div>
+ <script src="./app.js"></script>
+</body>
+</html>
