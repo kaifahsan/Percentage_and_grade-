@@ -52,14 +52,17 @@
 <div class="layout">
 <h1>Calculate Result</h1>
 <form action="#">
-<label for="input"><b>Obtained Marks:</b></label>
-<input type="text" id="input" placeholder="Enter your marks out of 850" required>
-<!-- <p class="invalid"></p> -->
+<label for="input"><b>Total Marks:</b></label>
+<input type="text" id="input" placeholder="Enter your total marks" required>
 <br>
 <br>
-<button onclick="call()" class="btn">Calculate  Percentage</button>
+<label for="input1"><b>Obtained Marks:</b></label>
+<input type="text" id="input1" placeholder="Enter your obtained marks" required>
+<h1 id="errorgen"></h1>
+<br>
+<br>
+<button onclick="call()" class="btn">Calculate </button>
 <p id="Percentage" class="Percentage"></p>
-<button onclick="grade()" class="btn">Your Grade</button>
 </form>
 <h1 id="grade" class="grade"></h1>
 </div>
