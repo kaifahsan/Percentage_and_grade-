@@ -41,3 +41,18 @@ input[type="text"] {
     font-size: 1rem;
     margin-bottom: 20px;
 }
+@media (max-width:768px){
+    .main{
+        width: 40%;
+    }
+}
+@media (max-width:425px){
+    .main{
+        width: 60%;
+    }
+}
+@media (max-width:375px){
+    .main{
+        width: 80%;
+    }
+}
