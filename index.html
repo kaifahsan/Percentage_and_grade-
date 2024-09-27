@@ -1,71 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculate percentage</title>
-    <style>
-        body{
-            background-color:white;
-        }
-        h1{
-            color: Green;
-        }
-        .layout{
-            width: 30%;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            border: 1px solid green;
-            box-shadow: 5px 5px 5px gray;
-            padding: 1rem 1rem;
-        }
-        .btn{
-            cursor: pointer;
-            padding: 1rem 1rem;
-            font-weight: 700;
-            background-color: green;
-            color: white;
-            outline: none;
-            border: none;
-        }
-        .Percentage{
-            color: green;
-            font-size: 20px;
-        }
-        input[type="text"] {
-            padding: .3rem ;
-        }
-        @media (max-width:1024px){
-            input[type="text"] {
-            margin-top: 10px;
-        }
-        }
-        @media (max-width:425px){
-          .layout{
-            width: 80%;
-          }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate Percentage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="layout">
-<h1>Calculate Result</h1>
-<form action="#">
-<label for="input"><b>Total Marks:</b></label>
-<input type="text" id="input" placeholder="Enter your total marks" required>
-<br>
-<br>
-<label for="input1"><b>Obtained Marks:</b></label>
-<input type="text" id="input1" placeholder="Enter your obtained marks" required>
-<h1 id="errorgen"></h1>
-<br>
-<br>
-<button onclick="call()" class="btn">Calculate </button>
-<p id="Percentage" class="Percentage"></p>
-</form>
-<h1 id="grade" class="grade"></h1>
+  <div class="main">
+  <h1>Calculate Percentage</h1>
+  <input type="text" placeholder="Enter Your Total Marks" id="input">
+  <br>
+  <br>
+  <input type="text" placeholder="Enter Your Obtained Marks" id="input1">
+  <h1 id="showPercentage"></h1>
+  <h1 id="Showgrade"></h1>
+  <button onclick="Cal()" class="btn">Calculate</button>
+  
 </div>
- <script src="./app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
